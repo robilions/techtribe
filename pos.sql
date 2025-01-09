@@ -320,7 +320,7 @@ CREATE TABLE `setting` (
 --
 
 INSERT INTO `setting` (`id_setting`, `nama_perusahaan`, `alamat`, `telepon`, `tipe_nota`, `diskon`, `path_logo`, `path_kartu_member`, `created_at`, `updated_at`) VALUES
-(1, 'Toko Amsis', 'Jakarta', '081283804283', 1, 5, '/img/logo.png', '/img/member.png', NULL, NULL);
+(1, 'Toko Fida Bakery', 'Jakarta', '081283804283', 1, 5, '/img/logo.png', '/img/member.png', NULL, NULL);
 
 -- --------------------------------------------------------
 
