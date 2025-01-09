@@ -16,7 +16,7 @@ class UserTableSeeder extends Seeder
     {
         $users = array(
             [
-                'name' => 'Annasia',
+                'name' => 'Wisnu',
                 'email' => 'a@a.com',
                 'password' => bcrypt('123'),
                 'foto' => 'kosong.jpg',
