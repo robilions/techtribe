@@ -14,7 +14,7 @@ class AddMetodeBayarToPenjualanTable extends Migration
     public function up()
     {
         Schema::table('penjualan', function (Blueprint $table) {
-            $table->string('metode_bayar')->nullable(); // Adding the 'metode_bayar' column (nullable)
+            //
         });
     }
 
@@ -26,7 +26,7 @@ class AddMetodeBayarToPenjualanTable extends Migration
     public function down()
     {
         Schema::table('penjualan', function (Blueprint $table) {
-            $table->dropColumn('metode_bayar'); // Drop the 'metode_bayar' column
+            //
         });
     }
 }

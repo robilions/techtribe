@@ -15,7 +15,7 @@ class ImageController extends Controller
         return view('imageUpload');
     }
 
-    public function store(Request $request): JsonResponse
+    : JsonResponse
     {
         $request->validate([
             'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048'
