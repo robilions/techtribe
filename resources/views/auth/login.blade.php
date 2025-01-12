@@ -46,7 +46,7 @@
                 <!-- /.col -->
             </div>
         </form>
-        <br><center><p>Repost by <a href='https://stokcoding.com/' title='StokCoding.com' target='_blank'>StokCoding.com</a></p></center>
+        <br><center></center>
         
     </div>
     <!-- /.login-box-body -->
