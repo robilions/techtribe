@@ -122,7 +122,7 @@
                                 <div class="col-lg-8">
                                     <select name="metode_bayar" id="metode_bayar" class="form-control" required>
                                         <option value="">Metode Pembayaran</option>
-                                        <option value="COD">Cash On Delivery</option>
+                                        <option value="COD">QRIS</option>
                                         <option value="Transfer">Bank Transfer</option>
                                         <option value="COS">Bayar Ditempat</option>
                                     </select>
