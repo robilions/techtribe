@@ -87,6 +87,7 @@ class PenjualanController extends Controller
         $penjualan->bayar = $request->bayar;
         $penjualan->diterima = $request->diterima;
         $penjualan->metode_bayar = $request->metode_bayar;
+        $penjualan->status = 'selesai';
         $penjualan->update();
 
         $detail = PenjualanDetail::where('id_penjualan', $penjualan->id_penjualan)->get();
