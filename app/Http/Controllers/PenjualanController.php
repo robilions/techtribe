@@ -20,7 +20,7 @@ class PenjualanController extends Controller
 
     public function data()
     {
-        $penjualan = Penjualan::with('member')->orderBy('id_penjualan', 'desc')->where('id_member','<>',null)->get();
+        $penjualan = Penjualan::with('member')->orderBy('id_penjualan', 'desc')->get();
 
         return datatables()
             ->of($penjualan)
