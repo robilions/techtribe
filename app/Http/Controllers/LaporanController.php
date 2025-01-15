@@ -6,7 +6,8 @@ use App\Models\Pembelian;
 use App\Models\Pengeluaran;
 use App\Models\Penjualan;
 use Illuminate\Http\Request;
-use PDF;
+use TCPDF;
+
 
 class LaporanController extends Controller
 {
@@ -74,11 +75,22 @@ class LaporanController extends Controller
     }
 
     public function exportPDF($awal, $akhir)
-    {
-        $data = $this->getData($awal, $akhir);
-        $pdf  = PDF::loadView('laporan.pdf', compact('awal', 'akhir', 'data'));
-        $pdf->setPaper('a4', 'potrait');
-        
-        return $pdf->stream('Laporan-pendapatan-'. date('Y-m-d-his') .'.pdf');
-    }
+{
+    $data = $this->getData($awal, $akhir);
+
+    $html = view('laporan.pdf', compact('awal', 'akhir', 'data'))->render();
+
+    $pdf = new TCPDF();
+    $pdf->SetCreator(PDF_CREATOR);
+    $pdf->SetAuthor('Your App Name');
+    $pdf->SetTitle('Laporan Pendapatan');
+    $pdf->SetMargins(10, 10, 10);
+    $pdf->AddPage();
+    $pdf->SetFont('helvetica', '', 10);
+
+    $pdf->writeHTML($html, true, false, true, false, '');
+    return response($pdf->Output('Laporan-pendapatan-' . date('Y-m-d-his') . '.pdf', 'I'))
+        ->header('Content-Type', 'application/pdf');
+}
+
 }
