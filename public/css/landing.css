@@ -1,4 +1,4 @@
-* Reset margin dan padding */
+
 * {
   margin: 0;
   padding: 0;
@@ -10,11 +10,10 @@
 }
 
 body    {
-    background-image: url('Landing\ Page.png');
     background-size: cover;
     margin: 0;
     padding: 0;
-    background-image: url(public/images/landing);
+    background-image: url('../images/Page.png');
 }
 
 /* Gaya untuk navbar */
@@ -30,6 +29,7 @@ body    {
   align-items: center;
   gap: 10px; /* Jarak antara logo dan teks */
   padding-left: 15px;
+  background-image: url();
 }
 
 .navbar .logo img {
