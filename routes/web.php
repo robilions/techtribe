@@ -30,12 +30,15 @@ use Illuminate\Support\Facades\Route;
 
 
 // Route untuk landing page
-Route::get('/landing', function () {
-    return view('landing.index');
-});
 Route::get('/', function () {
-    return redirect()->route('login');
-});
+    return view('landing.index'); // Menampilkan view landing.index
+})->name('landing.index'); // Memberikan nama route 'landing.index'
+
+
+Route::get('/login', function () {
+    return view('auth.login'); // Sesuaikan dengan lokasi view login
+})->name('login');
+
 
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
