@@ -310,5 +310,87 @@ font-size: 36px; /* Ukuran lebih kecil dari H1 */
     color: #666;
     font-size: 12px;
 }
+
+.section-kontak {
+  text-align: center;
+  margin: 20px 0;
+  font-style: oblique;
+  font-weight: bold;
+
+}
+
+.section-kontak h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.section-kontak h1:before,
+.section-kontak h1:after {
+  content: "";
+  flex: 0.42; 
+  height: 2px;
+  background-color: black;
+  margin: 0 60px 0 60px;
+}
+
+.section-kontak p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #000000;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contact-box {
+  background-color: #d8c3a5;
+  padding: 20px;
+  aspect-ratio: 1 / 0.37;
+  border-radius: 8px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+}
+
+.contact-box h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contact-box p {
+  font-size: 14px;
+  color: #333;
+}
+
+.contact-box img {
+  margin-top: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.whatsapp-icon {
+  margin-top: 20px;
+}
+
+.u {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  height: 85vh;
+}
   
  

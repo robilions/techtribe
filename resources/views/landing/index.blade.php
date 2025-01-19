@@ -84,7 +84,7 @@
       </section>
 
       <!-- Tentang kami-->
-       <div class="section-tentang-kami">
+       <div class="section-tentang-kami" id="TentangKami">
         <h1>TENTANG KAMI</h1>
     </div>
     <div class="container">
@@ -103,17 +103,29 @@
         </div>
     </div>
        <!--kontak-->
-       <section class="Kontak" id="Kontak">
-        <div class="heading">
-            <h1>------Kontak kami------</h1>
+       <div class="section-kontak" id="Kontak">
+            <h1>KONTAK</h1>
+            <div class="u">
+            <p>One Email, Phone Call & Address</p>
+            <div class="contact-container">
+                <div class="contact-box">
+                    <h2>Email</h2>
+                    <p>FidaBakery@gmail.com</p>
+                </div>
+                <div class="contact-box">
+                    <h2>No Telp</h2>
+                    <p>+62 000-0000-0000</p>
+                </div>
+                <div class="contact-box">
+                    <h2>Alamat</h2>
+                    <p>Bekasi</p>
+                </div>
+            </div>
+            <div class="whatsapp-icon">
+                <img src="whatsapp-icon.png" alt="WhatsApp">
+            </div>
+            </div>
         </div>
-
-        <div class="Kontak-item">
-            <h3>Email</h3>
-            <p>FidaBakery@gmail.com</p>
-          </div>
-      </section>
-  </section>
 
 
  
