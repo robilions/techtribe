@@ -23,7 +23,7 @@
           <li><a href="#Produk">Produk</a></li>
           <li><a href="#TentangKami">Tentang Kami</a></li>
           <li><a href="#Kontak">Kontak</a></li>
-          <li><a href="#LOGIN" class="login-btn">LOGIN</a></li>
+          <li><a href="{{ route('login') }}" class="login-btn">LOGIN</a></li>
         </ul>
       </nav>
       </header>
