@@ -2,7 +2,6 @@
 
 @section('login')
 <div class="login-box">
-
     <!-- /.login-logo -->
     <div class="login-box-body">
         <div class="login-logo">
@@ -22,15 +21,18 @@
                 <span class="help-block with-errors"></span>
                 @enderror
             </div>
+
             <div class="form-group has-feedback @error('password') has-error @enderror">
-                <input type="password" name="password" class="form-control" placeholder="Password" required>
-                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                <input type="password" name="password" class="form-control" placeholder="Password" required id="password">
+                <span class="fa fa-eye form-control-feedback" id="togglePassword" style="cursor: pointer;"></span>
                 @error('password')
                     <span class="help-block">{{ $message }}</span>
                 @else
                     <span class="help-block with-errors"></span>
                 @enderror
             </div>
+        
+
             <div class="row">
                 <div class="col-xs-8">
                     <div class="checkbox icheck">
@@ -45,11 +47,31 @@
                 </div>
                 <!-- /.col -->
             </div>
+
         </form>
         <br><center></center>
-        
     </div>
     <!-- /.login-box-body -->
 </div>
 <!-- /.login-box -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const togglePassword = document.getElementById('togglePassword');
+        const passwordField = document.getElementById('password');
+
+        if (togglePassword && passwordField) {
+            console.log('Toggle password and password field found');
+            togglePassword.addEventListener('click', function () {
+                console.log('Toggle password clicked');
+                const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+                passwordField.setAttribute('type', type);
+                this.classList.toggle('fa-eye-slash');
+            });
+        } else {
+            console.log('Toggle password or password field not found');
+        }
+    });
+</script>
+
 @endsection
