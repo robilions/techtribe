@@ -91,6 +91,16 @@
     <!-- /.row (main row) -->
 @endsection
 
+@push('css')
+<style>
+    .content-wrapper {
+        min-height: auto !important;
+        height: 350px; /* Ubah sesuai kebutuhan */
+    }
+</style>
+@endpush
+
+
 @push('scripts')
     <!-- ChartJS -->
     <script src="{{ asset('AdminLTE-2/bower_components/chart.js/Chart.js') }}"></script>

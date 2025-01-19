@@ -13,8 +13,7 @@ body    {
     background-size: cover;
     margin: 0;
     padding: 0;
-    background-image: url('../images/Page.png');
-}
+    background-image: url('../images/Page.png');}
 
 /* Gaya untuk navbar */
 .navbar {
