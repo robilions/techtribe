@@ -41,47 +41,23 @@
 
     </section>
 
-    <section class="Produk" id="Produk">
-        <div class="heading">
-            <h1>----Produk Kami----</h1>
-        </div>
-    </section>
 
-    <section class="Produk">
+      <!-- Produk -->
+      <div class="section-produk" id="Produk">
+        <h1>PRODUK KAMI</h1>
         <div class="produk-container">
-          <div class="produk-item">
-            <img src="donat1.jpg" alt="Produk 1">
-            <h3>Donat almoond</h3>
-            <p>Deskripsi produk 1 yang menarik dan informatif.</p>
-            <span class="harga">Rp. 7.000</span>
-            <button class="tombol-beli">Beli Sekarang</button>
-          </div>
-    
-          <div class="produk-item">
-            <img src="donat2.jpg" alt="Produk 2">
-            <h3>coklat crunchy</h3>
-            <p>Deskripsi produk 2 yang menarik dan informatif.</p>
-            <span class="harga">Rp. 7.000</span>
-            <button class="tombol-beli">Beli Sekarang</button>
-          </div>
-    
-          <div class="produk-item">
-            <img src="donat5.jpg" alt="Produk 3">
-            <h3>Coklat</h3>
-            <p>Deskripsi produk 3 yang menarik dan informatif.</p>
-            <span class="harga">Rp. 7.000</span>
-            <button class="tombol-beli">Beli Sekarang</button>
-          </div>
-          
-          <div class="produk-item">
-            <img src="donat6.jpg" alt="Produk 3">
-            <h3>Coklat Kacang</h3>
-            <p>Deskripsi produk 3 yang menarik dan informatif.</p>
-            <span class="harga">Rp. 7.000</span>
-            <button class="tombol-beli">Beli Sekarang</button>
-          </div>
+            <div class="circle"><img src="donat1.jpg" alt="Donat 1"></div>
+            <div class="circle"><img src="donat2.jpg" alt="Donat 2"></div>
+            <div class="circle"><img src="donat3.png" alt="Donat 3"></div>
+            <div class="circle"><img src="donat4.png" alt="Donat 4"></div>
+            <div class="circle"><img src="donat5.png" alt="Donat 5"></div>
+            <div class="circle"><img src="donat6.png" alt="Donat 6"></div>
+            <div class="circle"><img src="donat7.png" alt="Donat 7"></div>
+            <div class="circle"><img src="donat8.png" alt="Donat 8"></div>
+            <div class="circle"><img src="donat9.png" alt="Donat 9"></div>
+            <div class="circle"><img src="donat10.png" alt="Donat 10"></div>
         </div>
-      </section>
+    </div>
 
       <!-- Tentang kami-->
        <div class="section-tentang-kami" id="TentangKami">
@@ -95,10 +71,10 @@
         </div>
         <div class="images">
             <div class="image-box">
-                <p>GAMBAR</p>
+                <img src="nama.jpg" alt="aa">
             </div>
             <div class="image-box">
-                <p>GAMBAR</p>
+                <img src="nama.jpg" alt="aaa">
             </div>
         </div>
     </div>
