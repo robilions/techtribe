@@ -121,27 +121,26 @@ class PenjualanDetailController extends Controller
 
     public function destroy($id)
 {
-    // Cek apakah detail penjualan ditemukan
+    // Cari detail penjualan berdasarkan id_penjualan_detail
     $detail = PenjualanDetail::find($id);
+
     if (!$detail) {
         return response()->json(['error' => 'Detail penjualan tidak ditemukan'], 404);
+    }
+
+    // Kembalikan stok produk
+    $produk = Produk::find($detail->id_produk); // Cari produk berdasarkan id_produk di detail penjualan
+    if ($produk) {
+        $produk->stok += $detail->jumlah; // Tambahkan kembali jumlah ke stok produk
+        $produk->update();
     }
 
     // Hapus detail penjualan
     $detail->delete();
 
-    // Kembalikan stok produk
-    $produk = Produk::where('id_penjualan', $id)->first(); // Cari produk berdasarkan id_penjualan
-    if ($produk) { // Pastikan data produk ditemukan
-        $stok = Produk::find($produk->id_produk); // Cari data produk berdasarkan id_produk
-        if ($stok) { // Pastikan data stok ditemukan
-            $stok->stok = $stok->stok + 1;
-            $stok->update();
-        }
-    }
-
     return response()->json(['success' => 'Data berhasil dihapus'], 204);
 }
+
 
 
     public function loadForm($diskon = 0, $total = 0, $diterima = 0)
