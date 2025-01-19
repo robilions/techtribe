@@ -84,31 +84,24 @@
       </section>
 
       <!-- Tentang kami-->
-       <section class="TentangKami" id="TentangKami">
-        <div class="heading">
-            <h1>----Tentang Kami----</h1>
+       <div class="section-tentang-kami">
+        <h1>TENTANG KAMI</h1>
+    </div>
+    <div class="container">
+        <div class="content">
+            <p>Fida's Bakery adalah toko roti dan donat yang berfokus pada donat kentang dengan cita rasa khas dan tekstur lembut. Berdiri selama lebih dari satu setengah tahun, kami melayani pelanggan dengan kualitas produk terbaik, kesegaran, dan layanan yang ramah.</p>
+            <p>Kami melayani pembelian langsung di toko, dengan metode pembayaran tunai atau QRIS. Selain itu, kami juga menerima pesanan khusus melalui WhatsApp untuk memberikan fleksibilitas bagi pelanggan kami. Dengan komitmen pada kualitas dan inovasi, kami terus berusaha meningkatkan pengalaman pelanggan melalui digitalisasi sistem kami.</p>
+            <p>Fida's Bakery beroperasi setiap hari (kecuali hari libur nasional) mulai pukul 06:20 hingga 21:00, menghadirkan produk yang selalu baru dipanggang setiap hari. Kami percaya bahwa setiap gigitan dari produk kami akan membawa kebahagiaan dan kehangatan untuk Anda dan keluarga.</p>
         </div>
-        <div class="container">
-            <div class="TentangKami-img">
-                <img src="img/" alt="">
+        <div class="images">
+            <div class="image-box">
+                <p>GAMBAR</p>
             </div>
-            <div class="Tentangkami-text">
-                <h2></h2>
-                <p>Fidas Bakery adalah toko roti dan donat yang berfokus pada donat kentang
-                  dengan cita rasa khas dan tekstur lembut. Berdiri selama lebih dari satu tahun,
-                  kami melayani pelanggan dengan kualitas produk terbaik, kesegaran, dan layanan 
-                  yang ramah.</p>
-                <p>Kami melayani Pembeliaan langsung di toko, dengan metode pembayaran tunai atau QRIS.
-                  selain itu, kami juga menerima pesanan khusus melalui Whatsapp untuk memberikan fleksibilitas
-                  bagi pelanggan kami. dengan komitmen pada kualitas dan inovasi, kami terus berusaha meningkatkan
-                  pengalaman pelanggan melalui digitalisasi sistem kami.
-                  Fida's Bakery beroprasi setiap hari ( kecuali hari libur nasional ) mulai pukul 06.20 hingga 21.00 
-                  menghadirkan produk yang selalu baru dipanggang setiap hari. kami percaya bahwa setiap gigitan dari
-                  produk kami akan membawa kebahagian dan kehangatan untuk anda dan keluarga.</p>
+            <div class="image-box">
+                <p>GAMBAR</p>
             </div>
         </div>
-       </section>
-
+    </div>
        <!--kontak-->
        <section class="Kontak" id="Kontak">
         <div class="heading">
