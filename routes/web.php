@@ -17,7 +17,6 @@ use App\Http\Controllers\{
     UserController,
 };
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,6 +28,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+// Route untuk landing page
+Route::get('/landing', function () {
+    return view('landing.index');
+});
 Route::get('/', function () {
     return redirect()->route('login');
 });
