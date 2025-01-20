@@ -10,12 +10,7 @@ Aplikasi POS atau point of sales adalah aplikasi yang digunakan untuk mengelola 
 - Manajemen Kategori Produk
 - Manajemen Produk
   - Multiple Delete
-  - Cetak Barcode
 - Manajemen Member atau Anggota
-  - Cetak Kartu Member
-- Manajemen Supplier
-- Transaksi Pengeluaran
-- Transaksi Pembelian
 - Transaksi Penjualan
 - Laporan Pendapatan atau Laba & Rugi
   - Bulanan
@@ -23,11 +18,10 @@ Aplikasi POS atau point of sales adalah aplikasi yang digunakan untuk mengelola 
   - Custom Tanggal
 - Custom Tipe Nota
   - Nota Besar
-  - Nota Kecil / Thermal Nota
+  - Nota Kecil
 - Manajemen User dan Profil
 - Pengaturan Toko
   - Identitas
-  - Upload Desain Kartu Member
   - Setting Diskon Member
 - User (Administrator, Kasir)
 - Grafik ChartJS pada Dashboard
@@ -79,7 +73,3 @@ Menjalankan aplikasi
 ```bash
 php artisan serve
 ```
-
-## License
-
-[MIT license](https://opensource.org/licenses/MIT)

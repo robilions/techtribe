@@ -8,7 +8,7 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
 
     <link rel="icon" href="{{ url($setting->path_logo) }}" type="image/png">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- Bootstrap 3.3.7 -->
     <link rel="stylesheet" href="{{ asset('AdminLTE-2/bower_components/bootstrap/dist/css/bootstrap.min.css') }}">
     <!-- Font Awesome -->
@@ -50,6 +50,8 @@
             });
         });
         $('.form-login').validator();
+        
     </script>
+    @stack('scripts')
 </body>
 </html>
