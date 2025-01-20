@@ -179,6 +179,10 @@ font-size: 36px; /* Ukuran lebih kecil dari H1 */
     flex: 1;
 }
 
+.content p {
+  margin-bottom: 10px;
+}
+
 .images {
     display: flex;
     flex-direction: column;
