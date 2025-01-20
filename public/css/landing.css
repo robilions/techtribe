@@ -1,4 +1,4 @@
-* Reset margin dan padding */
+
 * {
   margin: 0;
   padding: 0;
@@ -10,12 +10,10 @@
 }
 
 body    {
-    background-image: url('Landing\ Page.png');
     background-size: cover;
     margin: 0;
     padding: 0;
-    background-image: url(public/images/landing);
-}
+    background-image: url('../images/Page.png');}
 
 /* Gaya untuk navbar */
 .navbar {
@@ -30,6 +28,7 @@ body    {
   align-items: center;
   gap: 10px; /* Jarak antara logo dan teks */
   padding-left: 15px;
+  background-image: url();
 }
 
 .navbar .logo img {
@@ -125,7 +124,6 @@ font-size: 36px; /* Ukuran lebih kecil dari H1 */
     }
     
 
-
 .cta-button {
     background-color: #000000;
     color: white;
@@ -139,114 +137,8 @@ font-size: 36px; /* Ukuran lebih kecil dari H1 */
     background-color: #0056b3;
 }
 
-.heading{
-    text-align: center;
-    
-}
 
-.heading-span{
-    font-size: 1rem;
-    color: #eaeaea;
-}
-
-.heading h1{
-    font-size: 3rem;
-    color: #d67534e8;
-}
-
-.produk {
-    display: flex;
-    justify-content: center;
-    padding: 20px 0;
-    margin-bottom: 25em;
-  }
-  
-  .produk-container {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    gap: 50px;
-    max-width: 2000px;
-    width: 100%;
-  }
-  
-  .produk-item {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 15px;
-    width: 30%;
-    text-align: center;
-  }
-  
-  .produk-item img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .produk-item h3 {
-    margin: 10px 0;
-    font-size: 20px;
-    color: #333;
-  }
-  
-  .produk-item p {
-    font-size: 14px;
-    color: #666;
-    margin: 10px 0;
-  }
-  
-  .harga {
-    display: block;
-    margin: 10px 0;
-    font-size: 18px;
-    color: #e74c3c;
-  }
-  
-  .tombol-beli {
-    background-color: #27ae60;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .tombol-beli:hover {
-    background-color: #2ecc71;
-  }
-
-
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    margin-top: 2rem;
-  }
-
-  .TentangKami-img {
-    flex: 1 1 21rem;
-  }
-
-  .Tentangkami-text {
-    flex: 1 1 21rem;
-  }
-
-
-  .Kontak{
-    margin-bottom: 25em;
-  }
-  .Kontak-item {
-    background-color: rgba(212, 140, 31, 0.966);
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    justify-content: center;
-    padding: 15px;
-    width: 30%;
-    text-align: center;
-  }
+  /* Tentang Kami */
 
   .section-tentang-kami {
     text-align: center;
@@ -287,6 +179,10 @@ font-size: 36px; /* Ukuran lebih kecil dari H1 */
     flex: 1;
 }
 
+.content p {
+  margin-bottom: 10px;
+}
+
 .images {
     display: flex;
     flex-direction: column;
@@ -310,5 +206,157 @@ font-size: 36px; /* Ukuran lebih kecil dari H1 */
     color: #666;
     font-size: 12px;
 }
-  
+
+@media (max-width: 600px) {
+  .container {
+      flex-direction: column;
+  }
+  .image-box {
+      height: 200px;
+  }
+}
+
+/* Kontak Kami */
+
+.section-kontak {
+  text-align: center;
+  margin: 20px 0;
+  font-style: oblique;
+  font-weight: bold;
+
+}
+
+.section-kontak h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.section-kontak h1:before,
+.section-kontak h1:after {
+  content: "";
+  flex: 0.42; 
+  height: 2px;
+  background-color: black;
+  margin: 0 60px 0 60px;
+}
+
+.section-kontak p {
+  margin: 10px 0;
+  font-size: 14px;
+  color: #000000;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contact-box {
+  background-color: #d8c3a5;
+  padding: 20px;
+  aspect-ratio: 1 / 0.37;
+  border-radius: 8px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+}
+
+.contact-box h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contact-box p {
+  font-size: 14px;
+  color: #333;
+}
+
+.contact-box img {
+  margin-top: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.whatsapp-icon {
+  margin-top: 20px;
+}
+
+.u {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center; 
+  height: 85vh;
+}
  
+/* Produk Kami */
+
+.section-produk {
+  text-align: center;
+  position: relative;
+  padding: 20px 0;
+}
+
+.section-produk h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.section-produk h1:before,
+.section-produk h1:after {
+  content: "";
+  flex: 0.42; 
+  height: 2px;
+  background-color: black;
+  margin: 0 60px 0 60px;
+}
+
+.section-produk h1:before {
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.section-produk h1:after {
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.produk-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  gap: 30px;
+  justify-content: center;
+  padding: 0 40px;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  margin: 42px;
+  border-radius: 50%;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  align-items: center;
+  overflow: hidden;
+}
+
+.circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 50%;
+}
