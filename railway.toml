@@ -1,0 +1,3 @@
+[build]
+builder = "paketobuildpacks/builder:base"
+buildCommand = "composer install --no-dev --optimize-autoloader"
