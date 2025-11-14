@@ -1,3 +1,8 @@
 [build]
-builder = "paketobuildpacks/builder:base"
-buildCommand = "composer install --no-dev --optimize-autoloader"
+builder = "heroku/buildpacks:20"
+
+[build.env]
+COMPOSER_ALLOW_SUPERUSER = "1"
+
+[deploy]
+startCommand = "php artisan serve --host 0.0.0.0 --port $PORT"
