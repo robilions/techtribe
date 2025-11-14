@@ -22,7 +22,7 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
-Route::resource('/produk',ProdukController::class);
+Route::resource('/produk', ProdukController::class, ['as' => 'api']);
 Route::get('/kategori',[KategoriController::class,'index']);
 
 
